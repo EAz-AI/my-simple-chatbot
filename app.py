@@ -8,7 +8,7 @@ from transformers import pipeline
 @st.cache_resource
 def load_model():
     print("Загрузка модели...")
-    generator = pipeline('text-generation', model='sberbank-ai/rugpt3small_based_on_gpt2')
+    generator = pipeline('text-generation', model='tinkoff-ai/ru-gpts-prompt-tuner')
     print("Модель загружена.")
     return generator
 
